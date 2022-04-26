@@ -79,6 +79,54 @@ public class HelloWorld {
         String myAge = (age>20) ? "Good Morning" : "Good Evening";
         System.out.println(myAge);
 
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+        }
+
+        String month = "January";
+        switch (month){
+            case "November":
+                System.out.println("My birth month");
+                break;
+            case "December":
+                System.out.println("Last month");
+                break;
+            case "January":
+                System.out.println("First month");
+                break;
+            default:
+                System.out.println("Not a valid month");
+        }
+
+        int i = 1;
+        while (i <= 5){
+            System.out.println("Hello " + i);
+            i++;
+        }
+
+        int p = 6;
+        do {
+            System.out.println("Hello " + p);
+            p++;
+        }
+        while (p <= 8);
+
+        for (int f = 0; f < 10; f = f +3){
+            System.out.println(f);
+        }
+
 
     }
 }
