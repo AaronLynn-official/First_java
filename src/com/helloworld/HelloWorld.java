@@ -1,6 +1,7 @@
 package com.helloworld;
 
 import java.lang.module.FindException;
+import java.util.function.DoubleToIntFunction;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -64,5 +65,20 @@ public class HelloWorld {
         System.out.println(Math.min(6,9));
         System.out.println(sqrt);
         System.out.println(randomNum);
+
+        int time = 20;
+        if (time<18){
+            System.out.println("Good Morning");
+        } else if (time<19) {
+            System.out.println("Good Afternoon");
+        } else {
+            System.out.println("Good Evening");
+        }
+
+        int age = 18;
+        String myAge = (age>20) ? "Good Morning" : "Good Evening";
+        System.out.println(myAge);
+
+
     }
 }
